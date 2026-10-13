@@ -344,13 +344,13 @@ h4:first-child { margin-top: 0; }
 /* Experience + Education side by side on wide screens */
 .duo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 64px); align-items: start; }
 .duo h2.duo__h2-next { margin-top: clamp(28px, 3.5vw, 44px); }
-@media (min-width: 641px) { .duo .timeline > li { grid-template-columns: 100px minmax(0, 1fr); gap: 16px; } }
+@media (min-width: 641px) { .duo .timeline > li { grid-template-columns: 120px minmax(0, 1fr); gap: 16px; } }
 /* Honors: full-width row under both columns, items split 2 + 2 to line up with the columns above */
 .honors { margin-top: clamp(28px, 3.5vw, 44px); }
 .honors__list { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: clamp(32px, 5vw, 64px); }
 .honors__list > li + li { border-top: 0; }
 .honors__list > li:nth-child(n+3) { border-top: 1px dashed var(--line); }
-@media (min-width: 641px) { .honors__list > li { grid-template-columns: 100px minmax(0, 1fr); gap: 16px; } }
+@media (min-width: 641px) { .honors__list > li { grid-template-columns: 120px minmax(0, 1fr); gap: 16px; } }
 @media (max-width: 900px) {
   .duo, .honors__list { grid-template-columns: minmax(0, 1fr); }
   .honors__list > li:nth-child(n+2) { border-top: 1px dashed var(--line); }
